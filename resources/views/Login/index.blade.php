@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,14 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" crossorigin="anonymous"></script>
     
     
-    <link rel="stylesheet" href="css/sign_in.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <div class ="modal-dialog text-center">
         <div class="col-sm-8 main-section">
             <div class = "modal-content">
                 <div class = "col-12 user-img">
-                    <img src="login/logo.jpg">
+                    <img src="img/logo-login.jpg">
                 </div>
                 <form class="col-12">
                     <div class="form-group" id = "user-group">
