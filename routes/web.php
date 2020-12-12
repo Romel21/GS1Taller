@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/log', function () {
     return view('Login/index');
 });
+
+Route::get('/cita', function () {
+    return view('Cita/index');
+});
+
+Route::get('/cita1', function () {
+    return view('Cita/index1');
+});
