@@ -7,7 +7,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-
+    
+    <!--<link rel="stylesheet" href="{{asset("/css/cita.css")}}"> -->
+    <link rel="stylesheet" href="css/cita.css">
+ 
 </head>
 <body>
     <div class = "container ">
@@ -32,7 +35,7 @@
                     
                     <div class="col-md-6 mb-3">
                         <label for="phone number ">numero de contacto </label>
-                        <input type="text" class="form-control" id="phone number" placeholder="" value="" required>
+                        <input type="text" class="form-control" id="phone number" placeholder="" value="" required pattern="[0-9]{9}">
                     </div>
                 </div> 
 
