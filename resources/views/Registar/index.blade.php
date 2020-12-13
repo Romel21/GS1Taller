@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cita Previa</title>
+    <title>Registrar</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     
-    <!--<link rel="stylesheet" href="{{asset("/css/cita.css")}}"> -->
-    <link rel="stylesheet" href="css/cita.css">
+    <!--<link rel="stylesheet" href="{{asset("/css/registro.css")}}"> -->
+    <link rel="stylesheet" href="registro.css">
  
 </head>
 <body>
     <div class = "container ">
-        <div class = "py-5 text-center">
-            <h2>Cita Previa</h2>
+        <div class = "py-5 ">
+            <h1 class="title">Crear una cuenta</h1>
         </div>
 
         <div class="col-md-8 order-mx-5">
@@ -32,16 +32,34 @@
                         <input type="text" class="form-control" id="lastName" placeholder="" value="" required> 
 
                     </div>
-                    
-                    <div class="col-md-6 mb-3">
-                        <label for="phone number ">Numero de contacto </label>
-                        <input type="text" class="form-control" id="phone number" placeholder="" value="" required pattern="[0-9]{9}">
+                    <div class="col-md-2 mb-3">
+			            <label for="country">Provincias</label>
+			            <select class="custom-select d-block w-100" id="country" required>
+			              <option value="">Elige una opción </option>
+			              <option>NIE</option>
+			              <option>DNI</option>
+				        </select>
+			        </div>
+                    <div class="col-md-5 mb-3">
+                        <label for="documento ">Numero de documento </label>
+                        <input type="text" class="form-control" id="documento" placeholder="" value="" required ">
                     </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label for="phone number ">Numero de contacto </label>
+                        <input type="text" class="form-control" id="phone number" placeholder="Telefono" value="" required pattern="[0-9]{9}">
+                    </div>
+                    
                 </div> 
 
                 <div class="mb-3">
                     <label for="email">Email </label>
-                    <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password">Contraseña </label>
+                    <input type="password" class="form-control" id="password" required>
                 </div>
 
                 <div class="mb-3">
@@ -68,19 +86,7 @@
 
                 <hr class="mb-4">
 
-                <div class = "row">
-                    <div class = "col-md-6 mb-4">
-                        <label for="fechas">Seleccionar fecha</label>
-                        <input type="text" class="form-control" id="fechas" placeholder="mm/dd/yyyy" required>
-                    </div>
-
-                    <div class = "col-md-6 mb-4">
-                        <label for="horas">Hora</label>
-                        <input type="text" class="form-control" id="horas" placeholder="HH:MM" required>
-                    </div>
-                </div>
-                    
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Realizar cita</button>
+                <button class="btn btn-primary btn-lg btn-block mb-5" type="submit">Registrate</button>
             </form>
         </div>           
     </div>

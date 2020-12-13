@@ -25,6 +25,6 @@ Route::get('/cita', function () {
     return view('Cita/index');
 });
 
-Route::get('/cita1', function () {
-    return view('Cita/index1');
+Route::get('/Registra', function () {
+    return view('Registrar/index');
 });
