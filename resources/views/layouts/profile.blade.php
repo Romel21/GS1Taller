@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <style type="text/css">
-    body {
-      font-family: 'Brush Script MT', cursive;
-      color:black 
-    }
-    body {
-      background-color:#808080;
+        body {
+        font-family: 'Brush Script MT', cursive;
+        color:black 
+        }
+        body {
+        background-color:#808080;
 
-    }
-    h1{
-        color:blue
-    }
-  </style>
-</style>
+        }
+        h1{
+            color:blue
+        }
+    </style>
 </head>
 <body>
 <table width="280" cellspacing="1" cellpadding="3" border="0" bgcolor="#1E679A" align="center">
