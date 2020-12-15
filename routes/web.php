@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/pages/index');
 });
 
+<<<<<<< HEAD
 Route::get('/log', function () {
     return view('Login/index');
 });
@@ -27,4 +28,13 @@ Route::get('/cita', function () {
 
 Route::get('/Registra', function () {
     return view('Registrar/index');
+=======
+Route::get('/home', function () {
+    return view('/pages/index');
+});
+
+
+Route::get('/register', function () {
+    return view('/pages/register');
+>>>>>>> 09ceb13c9e7b6bd385d29a9dce05b59cf3730985
 });
