@@ -19377,6 +19377,28 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/index.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/index.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/menubar.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/menubar.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/register.scss":
 /*!**************************************!*\
   !*** ./resources/sass/register.scss ***!
@@ -19389,15 +19411,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/register.scss ***!
-  \********************************************************************************************/
+/*!******************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/register.scss ./resources/sass/menubar.scss ./resources/sass/index.scss ***!
+  \******************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\register.scss */"./resources/sass/register.scss");
+__webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\register.scss */"./resources/sass/register.scss");
+__webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\menubar.scss */"./resources/sass/menubar.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\index.scss */"./resources/sass/index.scss");
 
 
 /***/ })

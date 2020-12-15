@@ -14,19 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/register', function () {
     return view('/pages/index');
 });
 
-Route::get('/profile',function(){
-    return view('layouts/profile');
+Route::get('/home', function () {
+    return view('/pages/index');
 });
-Route::get('/profile/user',function(){
-    return view('login/user/user');
-});
-Route::get('/profile/user/xd',function(){
-    return view('login/user/quote/quote');
+
+
+Route::get('/register', function () {
+    return view('/pages/register');
 });
