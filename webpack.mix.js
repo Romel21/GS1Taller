@@ -16,3 +16,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/register.scss', 'public/css')
     .sass('resources/sass/menubar.scss', 'public/css')
     .sass('resources/sass/index.scss', 'public/css');
+
+
+mix.copyDirectory('resources/images', 'public/images');
