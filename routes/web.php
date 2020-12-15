@@ -25,3 +25,12 @@ Route::get('/home', function () {
 Route::get('/register', function () {
     return view('/pages/register');
 });
+
+// Usuarios
+Route::post('/usuario', 'UsuarioController@store')->name('store');
+Route::get('/usuario/{id}', 'UsuarioController@show')->name('show');
+
+// Citas
+
+
+// Vehiculos
