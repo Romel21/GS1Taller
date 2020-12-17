@@ -10,6 +10,7 @@ class Usuario extends Model
         'id',
         'password',
         'name',
+        'apellidos',
         'userName',
         'rol',
         'dni',

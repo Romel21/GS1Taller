@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Mi Taller</title>
     <link rel="stylesheet" href="{{ asset(mix('css/menubar.css')) }}">
+    
+    <!-- <link rel="stylesheet" href="jquery-ui.min.css"> -->
+    <!-- <script src="jquery-ui.min.js"></script> -->
   </head>
 
   <body>
@@ -27,10 +30,15 @@
     </main>
 
     <!-- Aqui el pie de pagina, footer -->
-
+    
     <footer>
       <p>© Copyright 2020. Todos los derechos esta reservados a Papafritas S.L</p>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      alert("Hola Alejandro");
+    </script>
+    @stack('extrajs')
   </body>
+
 </html>
