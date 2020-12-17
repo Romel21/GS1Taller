@@ -1,16 +1,23 @@
 @extends('layouts/contentLayout')
-<link rel="stylesheet" href="{{ asset(mix('css/register.css')) }}">
 @section('content')
+<link rel="stylesheet" href="{{ asset(mix('css/register.css')) }}">
 <form class="form">
   <h2>REGISTRO</h2>
-  <p type="Nombre:"><input></input></p>
-  <p type="Email:"><input></input></p>
-  <p type="Contraseña:"><input></input></p>
-  <p type="Repite Contraseña:"><input></input></p>
-  <button>ENVIAR</button>
+  <p type="Nombre:"><input type="text" name="usuario"></p>
+  <p type="Apellidos:"><input type="text" name="apellidos"></p>
+  <p type="Nombre de usuario:"><input type="text" name="username"></p>
+  <p type="DNI:"><input type="text" name="dni"></p>
+  <p type="Teléfono:"><input type="text" name="telefono"></p>
+  <p type="Contraseña:"><input type="password" name="contraseña"></p>
+{{ csrf_field() }}
+  <button class="enviar-registro">ENVIAR</button>
   <div>
     <span class="fa fa-phone"></span>000 000 000
     <span class="fa fa-envelope-o"></span> contacto@papafrita.com
   </div>
 </form>
 @endsection('content')
+
+@push('extrajs')
+<script src="{{ asset('js/register.js') }}"></script>
+@endpush
