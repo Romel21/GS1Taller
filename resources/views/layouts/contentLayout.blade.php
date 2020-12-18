@@ -15,7 +15,7 @@
     <img class="img-header" src="/images/taller1.jpg"/>
     <nav>
         <ul class="barra">
-            <li><a class="active" href="/home">Inicio</a></li>
+            <li><a class="active" href="/">Inicio</a></li>
             <li><a href="/register">Registro</a></li>
             <li><a href="#about">Sobre Nosotros</a></li>
             <li><a href="#login">Login</a></li>
@@ -34,7 +34,10 @@
     <footer>
       <p>© Copyright 2020. Todos los derechos esta reservados a Papafritas S.L</p>
     </footer>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     @stack('extrajs')
   </body>
 

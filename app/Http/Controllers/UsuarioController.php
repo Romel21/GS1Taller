@@ -15,10 +15,6 @@ use Carbon\Carbon;
 
 class UsuarioController extends Controller
 {
-public function index() {
-    return view('pages.register');
-}
-
     public function store(Request $request) {
         try {
             $user = new Usuario();

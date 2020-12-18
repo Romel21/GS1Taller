@@ -13,20 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('/pages/index');
-});
-
-Route::get('/home', function () {
-    return view('/pages/index');
-});
-
-
-// Route::post('/register', function () {
-//     return view('/pages/login');
-// });
-
-Route::get('/register', 'UsuarioController@index')->name('panle-registro');
+// Home
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/register', 'HomeController@register')->name('registerIndex');
+Route::get('/login', 'HomeController@login')->name('loginIndex');
 
 // Usuarios
 Route::post('/usuario', 'UsuarioController@store')->name('store');
