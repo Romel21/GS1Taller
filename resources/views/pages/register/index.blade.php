@@ -17,6 +17,7 @@
   <p type="DNI:"><input type="text" name="dni"></p>
   <input type="hidden" name="rol" value="1">
   <p type="Teléfono:"><input type="text" name="telefono"></p>
+  <input type="hidden" name="rol" value="1">
   <p type="Contraseña:"><input type="password" name="contraseña"></p>
 {{ csrf_field() }}
   <button class="enviar-registro2" type="submit">ENVIAR</button>
