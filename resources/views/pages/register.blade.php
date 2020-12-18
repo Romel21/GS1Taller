@@ -8,6 +8,7 @@
   <p type="Nombre de usuario:"><input type="text" name="username"></p>
   <p type="DNI:"><input type="text" name="dni"></p>
   <p type="Teléfono:"><input type="text" name="telefono"></p>
+  <input type="hidden" name="rol" value="1">
   <p type="Contraseña:"><input type="password" name="contraseña"></p>
 {{ csrf_field() }}
   <button class="enviar-registro">ENVIAR</button>
@@ -19,5 +20,5 @@
 @endsection('content')
 
 @push('extrajs')
-<script src="{{ asset('js/register.js') }}"></script>
+<script src="{{ asset('js/register/register.js') }}"></script>
 @endpush

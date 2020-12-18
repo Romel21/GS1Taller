@@ -15,8 +15,11 @@ use Carbon\Carbon;
 
 class UsuarioController extends Controller
 {
+public function index() {
+    return view('pages.register');
+}
+
     public function store(Request $request) {
-        dd($request);
         try {
             $user = new Usuario();
             $formulario = $request->only($user->getFillable());
