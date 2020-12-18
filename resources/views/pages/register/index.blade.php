@@ -9,7 +9,7 @@
 @endif
 
 <link rel="stylesheet" href="{{ asset(mix('css/register.css')) }}">
-<form class="form" action="{{ route('store') }}" method="POST">
+<form class="form" action="{{ route('registerStore') }}" method="POST">
   <h2>REGISTRO</h2>
   <p type="Nombre:"><input type="text" name="usuario"></p>
   <p type="Apellidos:"><input type="text" name="apellidos"></p>
