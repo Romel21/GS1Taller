@@ -26,13 +26,15 @@ Route::get('/home', function () {
 //     return view('/pages/login');
 // });
 
-Route::get('/register', function () {
-    return view('/pages/register');
-});
+// Route::get('/register', function () {
+//     return view('/pages/register');
+// });
 
 // Usuarios
-Route::post('/usuario', 'UsuarioController@store')->name('store');
-Route::get('/usuario/{id}', 'UsuarioController@show')->name('show');
+Route::get('/register', 'UsuarioController@index')->name('panel-user');
+// Route::post('/register2', 'UsuarioController@crear')->name('crear.usuario');
+Route::post('/index', 'UsuarioController@store')->name('store');
+// Route::get('/usuario/{id}', 'UsuarioController@show')->name('show');
 
 // Citas
 
