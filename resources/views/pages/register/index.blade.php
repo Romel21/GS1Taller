@@ -18,7 +18,7 @@
     <p type="Apellidos:"><input type="text" name="apellidos" required placeholder="Introduce tus apellidos" value="{{ old('apellidos') }}"></p>
     <p type="Nombre de usuario:"><input type="text" name="username" required placeholder="Introduce tu nombre de usuario" value="{{ old('username') }}"></p>
     <p  type="DNI:"><input type="text" name="dni" required minlength="9" maxlength="9" pattern="((\d{8})([A-Z]{1}))" placeholder="Ejemplo: 123456789A" value="{{ old('dni') }}"></p>
-    <input type="hidden" name="rol" value="1">
+    <input type="hidden" name="rol" value="2">
     <p type="Teléfono:"><input type="text" name="telefono" required placeholder="Introduce tu teléfono" value="{{ old('telefono') }}"></p>
     <p type="Contraseña:"><input type="password" name="contraseña" required placeholder="Introduce tu contraseña" value="{{ old('contraseña') }}"></p>
     {{ csrf_field() }}

@@ -19,7 +19,7 @@
             <li><a class="active" href="/">Inicio</a></li>
             <li><a href="/register">Registro</a></li>
             <li><a href="/cita">cita</a></li>
-            <li><a href="#login">Login</a></li>
+            <li><a href="/login">Login</a></li>
 
         </ul>
     </nav>
