@@ -20,6 +20,7 @@ Route::get('/login', 'HomeController@login')->name('loginIndex');
 
 // Usuarios
 Route::post('/registers', 'UsuarioController@store')->name('registerStore');
+Route::post('/logins', 'UsuarioController@loginConfirm')->name('loginConfirmation');
 
 // Citas
 Route::post('/citas', 'CitaController@store')->name('citaStore');
