@@ -18,8 +18,8 @@
         <ul class="barra">
             <li><a class="active" href="/">Inicio</a></li>
             <li><a href="/register">Registro</a></li>
-            <li><a href="/cita">cita</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><a href="/cita">Cita</a></li>
+            <li><a href="/log">Login</a></li>
 
         </ul>
     </nav>

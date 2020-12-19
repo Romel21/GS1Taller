@@ -4,5 +4,8 @@
     "/css/register.css": "/css/register.css",
     "/css/menubar.css": "/css/menubar.css",
     "/css/index.css": "/css/index.css",
-    "/js/register.js": "/js/register.js"
+    "/js/register.js": "/js/register.js",
+    "/css/cita.css": "/css/cita.css",
+    "/css/login.css": "/css/login.css",
+    "/css/registro.css": "/css/registro.css"
 }
