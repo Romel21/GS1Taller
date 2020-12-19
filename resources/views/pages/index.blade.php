@@ -13,7 +13,7 @@
   </div>
 </div>
 </div> -->
-<link rel="stylesheet" href="{{ asset(mix('css/index.css')) }}">
+<link rel="stylesheet" href="{{ asset(mix('css/home.css')) }}">
 @section('content')
 <div class="descripcion1">
   <img class="izquierda" src="/images/tallerheader.jpg">

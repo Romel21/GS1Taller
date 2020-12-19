@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Usuario;
 use Carbon\Carbon;
+use \Illuminate\Support\Facades\Validator;
 /**
  * Store a newly created resource in storage
  * 
@@ -13,8 +14,19 @@ use Carbon\Carbon;
  */
 
 class UsuarioController extends Controller
-{    
+{
+
+    
     public function store(Request $request) {
+            $request->validate([
+                'contraseña' => 'required',
+                'usuario' => 'required',
+                'apellidos' => 'required',
+                'username' => 'required',
+                'rol' => 'required',
+                'dni' => 'required',
+                'telefono' => 'required'
+            ]);
             $user = new Usuario();
             $user->password = md5($request->contraseña);
             $user->name = $request->usuario;
@@ -25,7 +37,7 @@ class UsuarioController extends Controller
             $user->phone = $request->telefono;
             $user->save();
     
-            return back()->with('mensaje', 'Nota agregada');
+            return back()->with('registroexitoso', 'Usuario creado correctamente');
     }
 
     public function show($id) {
