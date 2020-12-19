@@ -24,6 +24,7 @@ Route::post('/registers', 'UsuarioController@store')->name('registerStore');
 // Citas
 Route::post('/citas', 'CitaController@store')->name('citaStore');
 Route::get('/cita', 'HomeController@cita')->name('citaIndex');
+Route::get('/mis-citas', 'HomeController@verCitas')->name('misCitasIndex');
 
 // Pago
 Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');

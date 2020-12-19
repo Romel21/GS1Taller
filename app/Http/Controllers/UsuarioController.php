@@ -15,8 +15,6 @@ use \Illuminate\Support\Facades\Validator;
 
 class UsuarioController extends Controller
 {
-
-    
     public function store(Request $request) {
             $request->validate([
                 'contraseña' => 'required',

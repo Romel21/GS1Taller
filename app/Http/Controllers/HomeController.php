@@ -29,4 +29,8 @@ class HomeController extends Controller
     public function perfil() {
         return view('pages.profile.index');
     }
+
+    public function verCitas() {
+        return view('pages.misCitas.index');
+    }
 }
