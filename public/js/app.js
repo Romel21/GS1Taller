@@ -19421,6 +19421,17 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 
 /***/ }),
 
+/***/ "./resources/sass/profile.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/profile.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/register.scss":
 /*!**************************************!*\
   !*** ./resources/sass/register.scss ***!
@@ -19433,9 +19444,9 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/register.scss ./resources/sass/menubar.scss ./resources/sass/home.scss ./resources/sass/cita.scss ./resources/sass/login.scss ***!
-  \************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/register.scss ./resources/sass/menubar.scss ./resources/sass/home.scss ./resources/sass/cita.scss ./resources/sass/login.scss ./resources/sass/profile.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19445,7 +19456,8 @@ __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\register.scss */
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\menubar.scss */"./resources/sass/menubar.scss");
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\home.scss */"./resources/sass/home.scss");
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\cita.scss */"./resources/sass/cita.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\login.scss */"./resources/sass/login.scss");
+__webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\login.scss */"./resources/sass/login.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\profile.scss */"./resources/sass/profile.scss");
 
 
 /***/ })

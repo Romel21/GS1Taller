@@ -17,22 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/register', 'HomeController@register')->name('registerIndex');
 Route::get('/login', 'HomeController@login')->name('loginIndex');
-Route::get('/cita', 'HomeController@cita')->name('citaIndex');
 
 // Usuarios
 Route::post('/registers', 'UsuarioController@store')->name('registerStore');
 
 // Citas
+Route::post('/citas', 'CitaController@store')->name('citaStore');
+Route::get('/cita', 'HomeController@cita')->name('citaIndex');
+Route::get('/mis-citas', 'HomeController@verCitas')->name('misCitasIndex');
 
-Route::get('/register', function () {
-    return view('/pages/register');
-});
-Route::get('/paidment', function () {
-    return view('/pages/paidment');
-});
-Route::get('/profile', function () {
-    return view('/pages/profile');
-});
-Route::get('/crudtasks', function () {
-    return view('/pages/crudtasks');
-});
