@@ -19,10 +19,7 @@ Route::get('/register', 'HomeController@register')->name('registerIndex');
 Route::get('/login', 'HomeController@login')->name('loginIndex');
 
 // Usuarios
-Route::get('/register', 'UsuarioController@index')->name('panel-user');
-// Route::post('/register2', 'UsuarioController@crear')->name('crear.usuario');
-Route::post('/index', 'UsuarioController@store')->name('store');
-// Route::get('/usuario/{id}', 'UsuarioController@show')->name('show');
+Route::post('/registers', 'UsuarioController@store')->name('registerStore');
 
 // Citas
 

@@ -3,5 +3,6 @@
     "/css/app.css": "/css/app.css",
     "/css/register.css": "/css/register.css",
     "/css/menubar.css": "/css/menubar.css",
-    "/css/index.css": "/css/index.css"
+    "/css/index.css": "/css/index.css",
+    "/js/register.js": "/js/register.js"
 }
