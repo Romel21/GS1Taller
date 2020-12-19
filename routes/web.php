@@ -27,3 +27,9 @@ Route::post('/citas', 'CitaController@store')->name('citaStore');
 Route::get('/cita', 'HomeController@cita')->name('citaIndex');
 Route::get('/mis-citas', 'HomeController@verCitas')->name('misCitasIndex');
 
+// Pago
+Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
+
+// Perfil
+Route::get('/profile', 'HomeController@perfil')->name('perfilIndex');
+
