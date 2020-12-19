@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/register', 'HomeController@register')->name('registerIndex');
 Route::get('/login', 'HomeController@login')->name('loginIndex');
-Route::get('/cita', 'HomeController@cita')->name('lcitaIndex');
+Route::get('/cita', 'HomeController@cita')->name('citaIndex');
 
 // Usuarios
 Route::post('/registers', 'UsuarioController@store')->name('registerStore');

@@ -16,7 +16,7 @@ class UsuarioController extends Controller
 {    
     public function store(Request $request) {
             $user = new Usuario();
-            $user->password = $request->contraseña;
+            $user->password = md5($request->contraseña);
             $user->name = $request->usuario;
             $user->apellidos = $request->apellidos;
             $user->userName = $request->username;
