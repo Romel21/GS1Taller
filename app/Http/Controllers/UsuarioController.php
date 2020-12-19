@@ -7,6 +7,9 @@ use App\Usuario;
 use Carbon\Carbon;
 use Auth;
 use \Illuminate\Support\Facades\Validator;
+use \Illuminate\Database\Seeder;
+use \Illuminate\Support\Facades\DB;
+use \Illuminate\Support\Collection;
 /**
  * Store a newly created resource in storage
  * 
@@ -49,9 +52,13 @@ class UsuarioController extends Controller
             'username' => 'required',
             'contraseña' => 'required',
         ]);
-            
-        if(Auth::attempt($credenciales)){
-            return back()->with('loginexitoso', 'Usuario creado correctamente');
+        $user=$request->username;
+        $psw=md5($request->contraseña);
+        $datos = DB::table('usuarios')->select('id', 'rol', 'name')->where('userName', '=', $user)->where('password', '=', $psw)->first();
+        if($datos != null){
+            return redirect()->action(
+                [HomeController::class, 'index'], ['id' => $datos->id, 'rol' => $datos->rol, 'nombre'=>$datos->name]
+            );
         }else{
             return back()->with('loginfail', 'Usuario falló');
         }

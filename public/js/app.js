@@ -19373,7 +19373,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleError: Module Error (from ./node_modules/resolve-url-loader/index.js):\nresolve-url-loader: loader misconfiguration\n  \"engine\" option is not valid\n    at Object.emitError (C:\\laragon\\www\\GS1Taller\\node_modules\\webpack\\lib\\NormalModule.js:173:6)\n    at handleAsError (C:\\laragon\\www\\GS1Taller\\node_modules\\resolve-url-loader\\index.js:214:12)\n    at Object.resolveUrlLoader (C:\\laragon\\www\\GS1Taller\\node_modules\\resolve-url-loader\\index.js:156:12)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -19384,7 +19384,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleError: Module Error (from ./node_modules/resolve-url-loader/index.js):\nresolve-url-loader: loader misconfiguration\n  \"engine\" option is not valid\n    at Object.emitError (C:\\laragon\\www\\GS1Taller\\node_modules\\webpack\\lib\\NormalModule.js:173:6)\n    at handleAsError (C:\\laragon\\www\\GS1Taller\\node_modules\\resolve-url-loader\\index.js:214:12)\n    at Object.resolveUrlLoader (C:\\laragon\\www\\GS1Taller\\node_modules\\resolve-url-loader\\index.js:156:12)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -19406,7 +19406,7 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleError: Module Error (from ./node_modules/resolve-url-loader/index.js):\nresolve-url-loader: loader misconfiguration\n  \"engine\" option is not valid\n    at Object.emitError (C:\\laragon\\www\\GS1Taller\\node_modules\\webpack\\lib\\NormalModule.js:173:6)\n    at handleAsError (C:\\laragon\\www\\GS1Taller\\node_modules\\resolve-url-loader\\index.js:214:12)\n    at Object.resolveUrlLoader (C:\\laragon\\www\\GS1Taller\\node_modules\\resolve-url-loader\\index.js:156:12)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

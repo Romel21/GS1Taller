@@ -2,19 +2,11 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset(mix('css/login.css')) }}">
-@if(session('loginexitoso'))
-  <div class="card text-center mx-auto" style="width: 18rem; margin-top: 13%;">
-  <div class="card-body">
-    <h5 class="card-title">Usuario logueado correctamente</h5>
-    <p class="card-text">¡Gracias por loguearte!</p>
-    <a href="#" class="btn btn-primary registro-correcto">Aceptar</a>
-  </div>
-</div>
-@elseif(session('loginfail'))
+@if(session('loginfail'))
 <div class="card text-center mx-auto" style="width: 18rem; margin-top: 13%;">
   <div class="card-body">
     <h5 class="card-title">Ha fallado la autenticacion</h5>
-    <a href="#" class="btn btn-primary registro-correcto">Cerrar</a>
+    <a href="#" class="btn btn-primary login-incorrecto">Cerrar</a>
   </div>
 </div>
 @else
@@ -36,5 +28,5 @@
 @endsection('content')
 
 @push('extrajs')
-<script src="{{ asset('js/register.js') }}"></script>
+<script src="{{ asset('js/login.js') }}"></script>
 @endpush

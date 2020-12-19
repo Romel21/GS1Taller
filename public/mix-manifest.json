@@ -6,5 +6,7 @@
     "/css/home.css": "/css/home.css",
     "/css/cita.css": "/css/cita.css",
     "/css/login.css": "/css/login.css",
+    "/css/profile.css": "/css/profile.css",
+    "/js/login.js": "/js/login.js",
     "/js/register.js": "/js/register.js"
 }
