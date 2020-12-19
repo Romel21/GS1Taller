@@ -11,7 +11,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" crossorigin="anonymous"></script>
     
     
-    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="{{ asset(mix('css/Login.css')) }}">
 </head>
 <body>
     <div class ="modal-dialog text-center">

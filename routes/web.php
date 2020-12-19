@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('/pages/index');
 });
 
-// Route::get('/log', function () {
-//     return view('Login/index');
-// });
+Route::get('/log', function () {
+    return view('pages/login');
+});
 
 Route::get('/cita', function () {
     return view('Cita/index');

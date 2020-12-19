@@ -1,0 +1,15 @@
+body {
+  opacity: 0.85;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+}
+
+.title {
+  margin-left: 25%;
+}
+
+.container {
+  margin-top: 35px;
+  margin-left: 20%;
+}
+
