@@ -1,7 +1,9 @@
 body {
+  background-color: #008080;
   opacity: 0.85;
   padding: 0 20px;
   box-shadow: 0px 0px 3px #848484;
+  color: #F0FFFF;
 }
 
 .title {
@@ -9,7 +11,6 @@ body {
 }
 
 .container {
-  margin-top: 35px;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 

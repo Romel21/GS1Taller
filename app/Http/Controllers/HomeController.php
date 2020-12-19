@@ -17,4 +17,8 @@ class HomeController extends Controller
     public function login() {
         return view('pages.login.index');
     }
+
+    public function cita() {
+        return view('pages.cita.index');
+    }
 }

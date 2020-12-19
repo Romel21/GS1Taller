@@ -19388,10 +19388,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/index.scss":
-/*!***********************************!*\
-  !*** ./resources/sass/index.scss ***!
-  \***********************************/
+/***/ "./resources/sass/home.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/home.scss ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -19432,21 +19432,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/registro.scss":
-/*!**************************************!*\
-  !*** ./resources/sass/registro.scss ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
-/*!********************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/register.scss ./resources/sass/menubar.scss ./resources/sass/index.scss ./resources/sass/cita.scss ./resources/sass/login.scss ./resources/sass/registro.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/register.scss ./resources/sass/menubar.scss ./resources/sass/home.scss ./resources/sass/cita.scss ./resources/sass/login.scss ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19454,10 +19443,9 @@ __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\js\app.js */"./resour
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\register.scss */"./resources/sass/register.scss");
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\menubar.scss */"./resources/sass/menubar.scss");
-__webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\index.scss */"./resources/sass/index.scss");
+__webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\home.scss */"./resources/sass/home.scss");
 __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\cita.scss */"./resources/sass/cita.scss");
-__webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\login.scss */"./resources/sass/login.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\registro.scss */"./resources/sass/registro.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\GS1Taller\resources\sass\login.scss */"./resources/sass/login.scss");
 
 
 /***/ })
