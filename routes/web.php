@@ -25,4 +25,15 @@ Route::post('/registers', 'UsuarioController@store')->name('registerStore');
 // Citas
 Route::post('/citas', 'CitaController@store')->name('citaStore');
 
-// Vehiculos
+Route::get('/register', function () {
+    return view('/pages/register');
+});
+Route::get('/paidment', function () {
+    return view('/pages/paidment');
+});
+Route::get('/profile', function () {
+    return view('/pages/profile');
+});
+Route::get('/crudtasks', function () {
+    return view('/pages/crudtasks');
+});
