@@ -2,11 +2,5 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/register.css": "/css/register.css",
-    "/css/menubar.css": "/css/menubar.css",
-    "/css/home.css": "/css/home.css",
-    "/css/cita.css": "/css/cita.css",
-    "/css/login.css": "/css/login.css",
-    "/css/profile.css": "/css/profile.css",
-    "/js/cita.js": "/js/cita.js",
-    "/js/register.js": "/js/register.js"
+    "/css/menubar.css": "/css/menubar.css"
 }

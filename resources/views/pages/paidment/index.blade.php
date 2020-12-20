@@ -66,27 +66,21 @@
       <h4 class="mb-3">Datos del usuario</h4>
       <form class="needs-validation" novalidate>
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">Nombre</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-            <!-- <div class="invalid-feedback">
-              Valid first name is required.
-            </div> -->
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Apellidos</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-            <!-- <div class="invalid-feedback">
-              Valid last name is required.
-            </div> -->
-          </div>
+          
           <div class="col-md-6 mb-3">
             <label for="lastName">Nick del usuario</label>
             <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
             
           </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Citas del usuario</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Citas</option>
+              <option>ehm ya veremos como rellenamos esto xd</option>
+            </select>
+          </div>
         </div>
-
+        
         <div class="mb-3">
           <label for="email">Email </label>
           <input type="email" class="form-control" id="email" placeholder="ulpgc@hotmail.com">
@@ -98,21 +92,15 @@
         </div>
 
         <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Provincias</label>
-            <select class="custom-select d-block w-100" id="country" required>
-              <option value="">Elige una opción válida porfa</option>
-              <option>Madrid</option>
-              <option>Barcelona</option>
-              <option>Las Palmas</option>
-              <option>Pais Vasco</option>
-            </select>
-          </div>
+          
           <div class="col-md-4 mb-3">
             <label for="state">Localidad</label>
             <select class="custom-select d-block w-100" id="state" required>
               <option value="">Choose...</option>
-              <option>ehm ya veremos como rellenamos esto xd</option>
+              <option>Telde</option>
+              <option>Vecindario</option>
+              <option>Las palmas</option>
+              <option>Maspalomas</option>
             </select>
           </div>
           <div class="col-md-3 mb-3">
@@ -121,19 +109,6 @@
           </div>
         </div>
         <hr class="mb-4">
-
-        <h4 class="mb-3">Métodos de pago</h4>
-
-        <div class="d-block my-3">
-          <div class="custom-control custom-radio">
-            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="credit">Dinero perfil usuario</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="paypal">Efectivo</label>
-          </div>
-        </div>
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" type="submit">Terminar</button>
       </form>
