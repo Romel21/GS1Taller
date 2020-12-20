@@ -1,7 +1,5 @@
 @extends('layouts/contentLayout')
 
-<link rel="stylesheet" href="{{ asset(mix('css/cita.css')) }}">
-
 @section('content')
     <div class = "container ">
     @if(session('citacreada'))
