@@ -57,7 +57,27 @@ class HomeController extends Controller
     }
 
     public function perfil() {
-        return view('pages.profile.index');
+        $user= Auth::user();
+        $rol='';
+        $id=$user->id;
+        if($user->esAdmin()){
+            $rol='Administrador';
+            return view('home', compact('user', 'rol', 'id'));
+        }else if($user->esJefe()){
+            $rol='Jefe de taller';
+            return view('home', compact('user', 'rol','id'));
+        }else if($user->esMecanico()){
+            $rol='Mecanico';
+            return view('home', compact('user', 'rol','id'));
+        }else if($user->esRecepcionista()){
+            $rol='Recepcionista';
+            return view('home', compact('user', 'rol','id'));
+        }
+        else{
+            $rol='Cliente';
+            return view('home', compact('user', 'rol','id'));
+        }
+        // return view('pages.profile.index');
     }
 
     public function verCitas() {
