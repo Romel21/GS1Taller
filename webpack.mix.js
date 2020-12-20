@@ -12,17 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .js('resources/js/register/register.js', 'public/js')
-    .js('resources/js/login/login.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .sass('resources/sass/register.scss', 'public/css')
-    .sass('resources/sass/menubar.scss', 'public/css')
     .sass('resources/sass/home.scss', 'public/css')
-    .sass('resources/sass/cita.scss', 'public/css')
-    .sass('resources/sass/login.scss', 'public/css')
     .sass('resources/sass/profile.scss', 'public/css');
 
 mix.copyDirectory('resources/images', 'public/images');
-
-    
-     

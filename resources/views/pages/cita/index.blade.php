@@ -1,6 +1,6 @@
-@extends('layouts/contentLayout')
+@extends('layouts.app')
 
-<link rel="stylesheet" href="{{ asset(mix('css/cita.css')) }}">
+
 
 @section('content')
     <div class = "container ">
@@ -9,7 +9,7 @@
             <div class="card-body">
                 <h5 class="card-title">Cita creada correctamente</h5>
                 <p class="card-text">¡Gracias confiar en nuestro taller!</p>
-                <a href="/profile" class="btn btn-primary cita-correcta">Aceptar</a>
+                <a href="/cita" class="btn btn-primary cita-correcta">Aceptar</a>
             </div>
         </div>
     @else
@@ -36,7 +36,7 @@
                 <div class="mb-3">
                     <label for="address">Dirección</label>
                     <input type="text" class="form-control" name="address" placeholder="villanueva 28" required value="{{ old('address') }}">
-                    <input type="hidden" name="user" value="" required>
+                    <input type="hidden" name="user" value="{{ Auth::user()->id }}" required>
                 </div>
 
                 {{ csrf_field() }}
