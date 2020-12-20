@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 // Home
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
-<<<<<<< HEAD
-=======
-
->>>>>>> 2eb3f328f65650587c6d3e723129027cb4358948
 
 // // Citas
 Route::post('/citas', 'CitaController@store')->name('citaStore');

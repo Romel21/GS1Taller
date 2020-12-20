@@ -1,10 +1,6 @@
 @extends('layouts.app')
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2eb3f328f65650587c6d3e723129027cb4358948
 @section('content')
     <div class = "container ">
     @if(session('citacreada'))

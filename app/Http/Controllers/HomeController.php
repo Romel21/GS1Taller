@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-<<<<<<< HEAD
-=======
     /**
      * Create a new controller instance.
      *
@@ -50,7 +48,6 @@ class HomeController extends Controller
         // return view('home', compact('user'));
     }
 
->>>>>>> 2eb3f328f65650587c6d3e723129027cb4358948
     public function cita() {
         return view('pages.cita.index');
     }
