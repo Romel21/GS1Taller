@@ -11,11 +11,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach()
+            @foreach($citas as $cita)
                 <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>{{$cita->fecha}}</td>
+                    <td>{{$cita->servicio}}</td>
+                    <td><a href="{{ route('destroy', $cita->id) }}" class="btn btn-primary m-1">Cancelar</a></td>
                 </tr>
             @endforeach
         </tbody>

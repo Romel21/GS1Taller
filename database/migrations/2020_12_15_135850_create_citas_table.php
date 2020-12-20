@@ -23,7 +23,7 @@ class CreateCitasTable extends Migration
                 ->onUpdate('cascade');
             $table->dateTime('fecha');
             $table->string('direccion');
-            $table->integer('servicio');
+            $table->string('servicio');
             $table->timestamps();
         });
     }

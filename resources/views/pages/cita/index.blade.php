@@ -25,9 +25,9 @@
                         <label for="service">Servicio</label>
                         <select class="form-select  custom-select d-block w-100" name="service">
                             <option selected disabled>Elige el servicio</option>
-                            <option value="1">Reparción del coche</option>
-                            <option value="2">Mantenimiento del coche</option>
-                            <option value="3">Chapa y pintura</option>
+                            <option value="Reparacion del coche">Reparción del coche</option>
+                            <option value="Mantenimiento del coche">Mantenimiento del coche</option>
+                            <option value="Chapa y pintura">Chapa y pintura</option>
                         </select>
                     </div>
                 </div> 
