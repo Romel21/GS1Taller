@@ -8,7 +8,7 @@
             <div class="card-body">
                 <h5 class="card-title">Cita creada correctamente</h5>
                 <p class="card-text">¡Gracias confiar en nuestro taller!</p>
-                <a href="/cita" class="btn btn-primary cita-correcta">Aceptar</a>
+                <a href="/profile" class="btn btn-primary cita-correcta">Aceptar</a>
             </div>
         </div>
     @else

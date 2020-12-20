@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 use App\Cita;
 use Carbon\Carbon;
 use \Illuminate\Support\Facades\Validator;
+use \Illuminate\Contracts\Foundation\Application;
+// use \Illuminate\Support\Facades\Validator;
+// use \Illuminate\Support\Facades\Validator;
+// use \Illuminate\Support\Facades\Validator;
+// use \Illuminate\Support\Facades\Validator;
+// use \Illuminate\Support\Facades\Validator;
 
 class CitaController extends Controller
 {
@@ -24,5 +30,10 @@ class CitaController extends Controller
         $cita->save();
 
         return back()->with('citacreada', 'Cita creada correctamente');
+    }
+
+    public function getData() {
+        $citas = Cita::all();
+
     }
 }
