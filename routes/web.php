@@ -28,6 +28,14 @@ Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
 // Perfil
 Route::get('/profile', 'HomeController@perfil')->name('perfilIndex');
 
+//Admin
+Route::get('/crear', 'AdminController@index')->name('admin');
+Route::post('/creas', 'AdminController@store')->name('adminStore');
+
+//Recepcionista
+Route::get('/lista', 'PaidmentController@index')->name('recepcionista');
+Route::get('/pagar/{id}', 'PaidmentController@indexpagar')->name('paidment');
+
 
 Auth::routes();
 
