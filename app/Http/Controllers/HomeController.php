@@ -77,7 +77,6 @@ class HomeController extends Controller
             $rol='Cliente';
             return view('home', compact('user', 'rol','id'));
         }
-        // return view('pages.profile.index');
     }
 
     public function verCitas() {

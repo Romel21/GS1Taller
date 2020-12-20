@@ -22,7 +22,6 @@
 </head>
 <body>
     <div id="app">
-    <img class="img-header" src="/images/taller1.jpg"/>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -73,7 +72,7 @@
                 </div>
             </div>
         </nav>
-
+        <!-- <img class="img-header" src="/images/taller1.jpg"/> -->
         <main class="py-4">
             @yield('content')
         </main>

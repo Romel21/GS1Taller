@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
 
-
 // // Citas
 Route::post('/citas', 'CitaController@store')->name('citaStore');
 Route::get('/cita', 'HomeController@cita')->name('citaIndex');
