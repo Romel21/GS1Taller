@@ -14,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Home
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
+<<<<<<< HEAD
+=======
 
-// Citas
+>>>>>>> 2eb3f328f65650587c6d3e723129027cb4358948
+
+// // Citas
 Route::post('/citas', 'CitaController@store')->name('citaStore');
 Route::get('/cita', 'HomeController@cita')->name('citaIndex');
 Route::get('/mis-citas', 'HomeController@verCitas')->name('misCitasIndex');
@@ -26,3 +31,8 @@ Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
 
 // Perfil
 Route::get('/profile', 'HomeController@perfil')->name('perfilIndex');
+
+
+Auth::routes();
+
+

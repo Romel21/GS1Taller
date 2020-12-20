@@ -1,8 +1,5 @@
-@extends('layouts/contentLayout')
-
 <link rel="stylesheet" href="{{ asset(mix('css/profile.css')) }}">
-
-@section('content')
+@if($rol == 'Cliente')
 <div class="container">
   <div class="card-deck">
     <div class="card">
@@ -21,6 +18,5 @@
     
   </div>
 </div>
+@endif
 
-
-@endsection('content')

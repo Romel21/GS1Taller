@@ -1,5 +1,10 @@
-@extends('layouts/contentLayout')
+@extends('layouts.app')
 
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2eb3f328f65650587c6d3e723129027cb4358948
 @section('content')
     <div class = "container ">
     @if(session('citacreada'))
@@ -7,7 +12,7 @@
             <div class="card-body">
                 <h5 class="card-title">Cita creada correctamente</h5>
                 <p class="card-text">¡Gracias confiar en nuestro taller!</p>
-                <a href="/profile" class="btn btn-primary cita-correcta">Aceptar</a>
+                <a href="/cita" class="btn btn-primary cita-correcta">Aceptar</a>
             </div>
         </div>
     @else
@@ -34,7 +39,7 @@
                 <div class="mb-3">
                     <label for="address">Dirección</label>
                     <input type="text" class="form-control" name="address" placeholder="villanueva 28" required value="{{ old('address') }}">
-                    <input type="hidden" name="user" value="" required>
+                    <input type="hidden" name="user" value="{{ Auth::user()->id }}" required>
                 </div>
 
                 {{ csrf_field() }}

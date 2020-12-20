@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.img-header{
+    width:100%;
+  }
+
+  footer{
+    text-align: center;
+    clear: both;
+    margin-top: 10%;
+  }
+
+  .barra{
+    margin-top: 0.1rem;
+  }

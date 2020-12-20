@@ -1,4 +1,5 @@
-@extends('layouts/contentLayout')
+@extends('layouts.app')
+
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
 
     <!-- Bootstrap core CSS -->
