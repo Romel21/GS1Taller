@@ -31,3 +31,4 @@ Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
 
 // Perfil
 Route::get('/profile', 'HomeController@perfil')->name('perfilIndex');
+Route::get('/profilerecep', 'HomeController@perfilrecep')->name('perfilIndex');
