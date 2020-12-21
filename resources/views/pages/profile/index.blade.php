@@ -73,7 +73,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Realizar pago</h5>
-          <a href="/lista"><img src="/images/planing.jpg" class="card-img"></a>
+          <a href="/listas"><img src="/images/planing.jpg" class="card-img"></a>
         </div>
       </div>
     </div>
