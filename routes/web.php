@@ -30,6 +30,18 @@ Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
 // Perfil
 Route::get('/profile', 'HomeController@perfil')->name('perfilIndex');
 
+// Tareas
+Route::get('/lista', 'HomeController@verTecnicos')->name('listar');
+Route::get('/lista', 'OrdenController@getTecnicos')->name('getTecnicos');
+Route::get('/tareas', 'HomeController@verTareas')->name('tasks');
+Route::get('/tareas', 'OrdenController@getTareas')->name('getTareas');
+Route::get('/asignar', 'HomeController@añadirTarea')->name('add');
+Route::post('/ordenes', 'OrdenController@store')->name('ordenStore');
+
+// Mecanico
+Route::delete('/delete/{id}', 'OrdenController@destroy')->name('destroy');
+Route::get('/agenda', 'HomeController@misTareas')->name('misTareas');
+Route::get('/agenda', 'OrdenController@getMisTareas')->name('getMisTareas');
 
 Auth::routes();
 

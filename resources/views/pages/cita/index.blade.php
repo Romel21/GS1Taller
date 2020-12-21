@@ -18,7 +18,7 @@
                 <div class="row ">
                     <div class="col-md-6 mb-3 ">
                         <label for="date">Seleccionar fecha y hora</label>
-                        <input type="datetime-local" class="form-control" name="date" placeholder="mm/dd/yyyy" required value="{{ old('fecha') }}">
+                        <input type="datetime-local" class="form-control" name="date" placeholder="mm/dd/yyyy" required value="{{ old('date') }}">
                     </div>
 
                     <div class="col-md-6 mb-3">

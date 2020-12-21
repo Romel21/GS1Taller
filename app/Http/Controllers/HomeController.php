@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use \App\User;
 
 class HomeController extends Controller
 {
@@ -81,5 +82,25 @@ class HomeController extends Controller
 
     public function verCitas() {
         return view('pages.misCitas.index');
+    }
+
+    public function verTecnicos() {
+        return view('pages.lista.index');
+    }
+
+    public function verTareas() {
+        return view('pages.tareas.index');
+    }
+
+    public function añadirTarea() {
+        $user = User::select('*')->where('role_id', '=', '4')->get();
+        $users = json_decode($user->toJson());
+        return view('pages.asignar.index', [
+            'users' => $users
+        ]);
+    }
+
+    public function misTareas() {
+        return view('pages.agenda.index');
     }
 }
