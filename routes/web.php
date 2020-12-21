@@ -42,6 +42,15 @@ Route::post('/ordenes', 'OrdenController@store')->name('ordenStore');
 Route::delete('/delete/{id}', 'OrdenController@destroy')->name('destroy');
 Route::get('/agenda', 'HomeController@misTareas')->name('misTareas');
 Route::get('/agenda', 'OrdenController@getMisTareas')->name('getMisTareas');
+//Admin
+Route::get('/crear', 'AdminController@index')->name('admin');
+Route::post('/creas', 'AdminController@store')->name('adminStore');
+
+//Recepcionista
+Route::get('/lista', 'PaidmentController@index')->name('recepcionista');
+Route::get('/pagar/{id}', 'PaidmentController@indexpagar')->name('paidment');
+Route::delete('/deletepago/{id}', 'PaidmentController@destroy')->name('paid');
+
 
 Auth::routes();
 
