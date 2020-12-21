@@ -2,23 +2,6 @@
   
 @section('content')
 
-<!-- @if(session('pagotarjeta'))
-        <div class="card text-center mx-auto" style="width: 18rem; margin-top: 13%;">
-            <div class="card-body">
-                <h5 class="card-title">Pago con tarjeta realizado correctamente</h5>
-                <a href="/" class="btn btn-primary cita-correcta">Aceptar</a>
-            </div>
-        </div>
-@elseif(session('pagoefectivo'))
-        <div class="card text-center mx-auto" style="width: 18rem; margin-top: 13%;">
-            <div class="card-body">
-                <h5 class="card-title">Pago en efectivo realizado correctamente</h5>
-                <a href="/" class="btn btn-primary cita-correcta">Aceptar</a>
-            </div>
-        </div>
-
-@else -->
-
   <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8 order-md-1">
