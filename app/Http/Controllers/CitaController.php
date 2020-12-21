@@ -2,16 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Cita;
+use App\User;
 use Carbon\Carbon;
 use \Illuminate\Support\Facades\Validator;
 use \Illuminate\Contracts\Foundation\Application;
-// use \Illuminate\Support\Facades\Validator;
-// use \Illuminate\Support\Facades\Validator;
-// use \Illuminate\Support\Facades\Validator;
-// use \Illuminate\Support\Facades\Validator;
-// use \Illuminate\Support\Facades\Validator;
+use \Illuminate\Contracts\View\Factory;
+use \Illuminate\Http\JsonResponse;
+use \Illuminate\Support\Facades\Session;
+use \Illuminate\Support\Facades\Storage;
+use \Illuminate\Validation\Rule;
+use \Illuminate\View\View;
+use \App\Http\Controllers\DB;
+
 
 class CitaController extends Controller
 {
@@ -33,7 +38,19 @@ class CitaController extends Controller
     }
 
     public function getData() {
-        $citas = Cita::all();
+        $user= Auth::user();
+        $id=$user->id;
+        $cita = Cita::select('*')->where('userId', '=', $id)->get();
+        $citas = json_decode($cita->toJson());
+        return view('/pages/misCitas/index', [
+            'citas' => $citas
+        ]);
+    }
 
+    public function destroy($cita) {
+        try {
+            Cita::destroy($cita);
+        } catch(\Exception $exception){}
+        
     }
 }

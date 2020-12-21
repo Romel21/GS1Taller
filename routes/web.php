@@ -21,6 +21,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::post('/citas', 'CitaController@store')->name('citaStore');
 Route::get('/cita', 'HomeController@cita')->name('citaIndex');
 Route::get('/mis-citas', 'HomeController@verCitas')->name('misCitasIndex');
+Route::get('/mis-citas', 'CitaController@getData')->name('getCitas');
+Route::delete('/delete/{id}', 'CitaController@destroy')->name('destroy');
 
 // Pago
 Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
