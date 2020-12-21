@@ -10,7 +10,8 @@ class Cita extends Model
         'userId',
         'fecha',
         'direccion',
-        'servicio'
+        'servicio',
+        'matricula'
     ];
 
     protected $table = 'citas';

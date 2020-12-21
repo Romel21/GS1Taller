@@ -32,11 +32,19 @@
                     </div>
                 </div> 
 
-                <div class="mb-3">
-                    <label for="address">Dirección</label>
-                    <input type="text" class="form-control" name="address" placeholder="villanueva 28" required value="{{ old('address') }}">
-                    <input type="hidden" name="user" value="{{ Auth::user()->id }}" required>
-                </div>
+                <div class="row ">
+                    <div class="col-md-6 mb-3 ">
+                        <label for="address">Dirección</label>
+                        <input type="text" class="form-control" name="address" placeholder="villanueva 28" required value="{{ old('address') }}">
+                        <input type="hidden" name="user" value="{{ Auth::user()->id }}" required>    
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="matricula">Matricula</label>
+                        <input type="text" class="form-control" name="matricula" placeholder="Introduzca la matrícula" required value="{{ old('matricula') }}">
+                    </div>
+                </div> 
+
 
                 {{ csrf_field() }}
                 

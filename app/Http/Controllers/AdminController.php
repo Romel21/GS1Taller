@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Validator;
+
 use App\User;
 
 class AdminController extends Controller
@@ -41,7 +45,7 @@ class AdminController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->password = md5($request->password);
+        $user->password = Hash::make($request->password);
         $user->role_id = $request->role_id;
         $user->dni = $request->dni;
         $user->phone = $request->phone;

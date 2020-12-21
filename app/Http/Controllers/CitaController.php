@@ -26,12 +26,14 @@ class CitaController extends Controller
             'address' => 'required',
             'user' => 'required',
             'service' => 'required',
+            'matricula' => 'required',
         ]);
         $cita = new Cita();
         $cita->userId = $request->user;
         $cita->fecha = $request->date;
         $cita->direccion = $request->address;
         $cita->servicio = $request->service;
+        $cita->matricula = $request->matricula;
         $cita->save();
 
         return back()->with('citacreada', 'Cita creada correctamente');

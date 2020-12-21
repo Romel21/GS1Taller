@@ -24,6 +24,7 @@ class CreateCitasTable extends Migration
             $table->dateTime('fecha');
             $table->string('direccion');
             $table->string('servicio');
+            $table->string('matricula');
             $table->timestamps();
         });
     }

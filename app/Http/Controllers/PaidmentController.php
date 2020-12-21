@@ -34,7 +34,6 @@ class PaidmentController extends Controller
         $user= Auth::user();
         $id=$user->id;
         $cita = User::join("citas", "citas.userId", "=", "users.id")->select("*")->get();
-
         $citas = json_decode($cita->toJson());
         return view('pages.paidment.lista', [
             'citas' => $citas
