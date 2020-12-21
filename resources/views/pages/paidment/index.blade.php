@@ -58,13 +58,20 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block"  onclick="confirmDelete({{$pagos->id}})">Terminar</button>
+        <!-- <button class="btn btn-primary btn-lg btn-block"  onclick="confirmDelete({{$pagos->id}})">Terminar</button> -->
+
+
+        <div class="form-group row mb-0">
+            <div class="col-md-6 offset-md-4">
+            <button class="btn btn-primary"  onclick="confirmDelete({{$pagos->id}})">Realizar pago</button>
+            <a href="/profile" class="btn btn-secondary m-1">Cancelar pago</a>
+            </div>
+        </div>
       <!-- </form> -->
     </div>
   </div>
 
 </div>
-<!-- @endif -->
 @endsection('content')
 
 @push('extrajs')

@@ -72,7 +72,7 @@
                 </div>
             </div>
         </nav>
-        <!-- <img class="img-header" src="/images/taller1.jpg"/> -->
+        <img class="img-header" src="/images/tallerheader.jpg"/>
         <main class="py-4">
             @yield('content')
         </main>

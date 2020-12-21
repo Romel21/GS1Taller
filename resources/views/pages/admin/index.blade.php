@@ -93,6 +93,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     Registrar
                                 </button>
+                                <a href="/profile" class="btn btn-secondary m-1">Cancelar</a>
                             </div>
                         </div>
                     </form>
