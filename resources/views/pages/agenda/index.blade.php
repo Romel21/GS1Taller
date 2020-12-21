@@ -47,7 +47,7 @@
             // Al confirmar que se desea eliminar
                 $.ajax({
                     type: 'DELETE',
-                    url: `/delete-orden/${id}`
+                    url: `/delete-order/${id}`
                 }).done((data) => {
                     Swal.fire({
                         title: '¡Tarea realizada!',
