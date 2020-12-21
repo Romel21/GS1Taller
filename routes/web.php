@@ -35,6 +35,7 @@ Route::post('/creas', 'AdminController@store')->name('adminStore');
 //Recepcionista
 Route::get('/lista', 'PaidmentController@index')->name('recepcionista');
 Route::get('/pagar/{id}', 'PaidmentController@indexpagar')->name('paidment');
+Route::post('/pagado/{id}', 'PaidmentController@pagado')->name('paid');
 
 
 Auth::routes();

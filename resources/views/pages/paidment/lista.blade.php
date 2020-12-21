@@ -9,6 +9,7 @@
                 <th scope="col">Fecha</th>
                 <th scope="col">Teléfono</th>
                 <th scope="col">Servicio</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Acción</th>
             </tr>
         </thead>
