@@ -47,7 +47,7 @@
             // Al confirmar que se desea eliminar
                 $.ajax({
                     type: 'DELETE',
-                    url: `/delete/${id}`
+                    url: `/delete-cita/${id}`
                 }).done((data) => {
                     Swal.fire({
                         title: '¡Cancelada!',

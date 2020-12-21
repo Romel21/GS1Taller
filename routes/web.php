@@ -22,7 +22,7 @@ Route::post('/citas', 'CitaController@store')->name('citaStore');
 Route::get('/cita', 'HomeController@cita')->name('citaIndex');
 Route::get('/mis-citas', 'HomeController@verCitas')->name('misCitasIndex');
 Route::get('/mis-citas', 'CitaController@getData')->name('getCitas');
-Route::delete('/delete/{id}', 'CitaController@destroy')->name('destroy');
+Route::delete('/delete-cita/{id}', 'CitaController@destroy')->name('destroyCita');
 
 // Pago
 Route::get('/paidment', 'HomeController@pago')->name('pagoIndex');
@@ -39,7 +39,7 @@ Route::get('/asignar', 'HomeController@añadirTarea')->name('add');
 Route::post('/ordenes', 'OrdenController@store')->name('ordenStore');
 
 // Mecanico
-Route::delete('/delete/{id}', 'OrdenController@destroy')->name('destroy');
+Route::delete('/delete-order/{id}', 'OrdenController@destroy')->name('destroyOrder');
 Route::get('/agenda', 'HomeController@misTareas')->name('misTareas');
 Route::get('/agenda', 'OrdenController@getMisTareas')->name('getMisTareas');
 //Admin
