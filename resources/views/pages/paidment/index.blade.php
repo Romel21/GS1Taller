@@ -64,7 +64,6 @@
   </div>
 
 </div>
-<!-- @endif -->
 @endsection('content')
 
 @push('extrajs')
