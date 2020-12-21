@@ -49,7 +49,7 @@
     <div class="card-deck" style="max-width: 40vw; margin: 0 auto;">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Crear usuario</h5>
+          <h5 class="card-title">Dar de alta empleados</h5>
           <a href="/crear"><img src="/images/planing.jpg" class="card-img"></a>
         </div>
       </div>

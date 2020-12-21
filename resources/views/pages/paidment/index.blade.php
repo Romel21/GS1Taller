@@ -2,7 +2,7 @@
   
 @section('content')
 
-@if(session('pagotarjeta'))
+<!-- @if(session('pagotarjeta'))
         <div class="card text-center mx-auto" style="width: 18rem; margin-top: 13%;">
             <div class="card-body">
                 <h5 class="card-title">Pago con tarjeta realizado correctamente</h5>
@@ -17,7 +17,7 @@
             </div>
         </div>
 
-@else
+@else -->
 
   <div class="container">
   <div class="row justify-content-center">
@@ -28,38 +28,38 @@
       </p>
     </div> 
       <h4 class="mb-3">Datos del usuario</h4>
-      <form method="POST" action="{{ route('paid', $pagos->id) }}">
+      <!-- <form > -->
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">Nombre</label>
-            <input type="text" class="form-control" id="firstName" name="name" value="{{$pagos->name}}" required>
+            <input type="text" class="form-control" id="firstName" name="name" value="{{$pagos->name}}" required disabled>
             
           </div>
           <div class="col-md-6 mb-3">
           <label for="email">Email </label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="ulpgc@hotmail.com" value="{{$pagos->email}}" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="ulpgc@hotmail.com" value="{{$pagos->email}}" required disabled>
             
           </div>
         </div>
 
         <div class="mb-3">
           <label for="address">Dirección de casa</label>
-          <input type="text" class="form-control" id="address" name="direccion" placeholder="villanueva 28" value="{{$pagos->direccion}}" required>
+          <input type="text" class="form-control" id="address" name="direccion" placeholder="villanueva 28" value="{{$pagos->direccion}}" required disabled>
         </div>
 
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">Servicio a pagar</label>
-            <input type="text" class="form-control" id="firstName" name="servicio" value="{{$pagos->servicio}}" required>
+            <input type="text" class="form-control" id="firstName" name="servicio" value="{{$pagos->servicio}}" required disabled>
             
           </div>
           <div class="col-md-6 mb-3">
-          <label for="fecha">Fecha de pago </label>
-          <input type="datetime-local" name="fecha" class="form-control" id="fecha" required>
-                      </div>
+            <label for="fecha">Fecha de la cita </label>
+            <input type="text" name="fecha" class="form-control" id="fecha"  value="{{$pagos->fecha}}" required disabled>
+          </div>
+
         </div>
         <hr class="mb-4">
-        <input type="hidden" name="estado" value="Pagado">
         {{ csrf_field() }}
 
         <h4 class="mb-3">Métodos de pago</h4>
@@ -75,11 +75,54 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Terminar</button>
-      </form>
+        <button class="btn btn-primary btn-lg btn-block"  onclick="confirmDelete({{$pagos->id}})">Terminar</button>
+      <!-- </form> -->
     </div>
   </div>
 
 </div>
-@endif
+<!-- @endif -->
 @endsection('content')
+
+@push('extrajs')
+<script>
+    function confirmDelete(id) {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        Swal.fire({
+            title: '¿Está segur@?',
+            text: '¿Quieres confirmar el pago?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'No',
+            confirmButtonText: 'Sí'
+        }).then((result) => {
+            if (result.value) {
+            // Al confirmar que se desea eliminar
+                $.ajax({
+                    type: 'DELETE',
+                    url: `/deletepago/${id}`
+                }).done((data) => {
+                    Swal.fire({
+                        title: '¡Pago confirmado correctamente!',
+                        icon: 'success'
+                    }).then(function() {
+                        window.location = "/profile";
+                    })
+                }).fail((message) => {
+                    Swal.fire({
+                        title: '¡Ha ocurrido un error al realizar el pago!',
+                        icon: 'warning'
+                    })
+                });
+            }
+        })
+    }
+</script>
+@endpush

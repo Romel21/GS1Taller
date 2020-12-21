@@ -57,37 +57,41 @@ class PaidmentController extends Controller
     }
 
 
-    public function pagado(Request $request, $id){
+    public function destroy($id){
         // dd($request->estado);
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255'],
-            'direccion' => ['required'],
-            'servicio' => ['required'],
-            'fecha' => ['required'],
-            'estado' => ['required'],
-            'radiopago' => ['required'],
-        ]);
-        // dd('hola');
-        // dd($request->all()->estado);
-        $pago = new Pago();
-        $pago->citaId = $id;
-        $pago->fecha = $request->fecha;
-        $pago->servicio = $request->servicio;    
-        $pago->estado = $request->estado;
+        // $request->validate([
+        //     'name' => ['required', 'string', 'max:255'],
+        //     'email' => ['required', 'string', 'email', 'max:255'],
+        //     'direccion' => ['required'],
+        //     'servicio' => ['required'],
+        //     'fecha' => ['required'],
+        //     'estado' => ['required'],
+        //     'radiopago' => ['required'],
+        // ]);
+        // // dd('hola');
+        // // dd($request->all()->estado);
+        // $pago = new Pago();
+        // $pago->citaId = $id;
+        // $pago->fecha = $request->fecha;
+        // $pago->servicio = $request->servicio;    
+        // $pago->estado = $request->estado;
         
 
-        $pago->save();
+        // $pago->save();
         
-        if($request->radiopago == "tarjeta"){
-            // return view('pages.paidment.index', $id)->with('pagotarjeta', 'pagado');
-            return back()->with('pagotarjeta', 'pagado');
+        // if($request->radiopago == "tarjeta"){
+        //     // return view('pages.paidment.index', $id)->with('pagotarjeta', 'pagado');
+        //     return back()->with('pagotarjeta', 'pagado');
 
-        }else{
-            return back()->with('pagoefectivo', 'pagado');
-            // return redirect()->route('pagoIndex')->with('pagoefectivo', 'pagado');
+        // }else{
+        //     return back()->with('pagoefectivo', 'pagado');
+        //     // return redirect()->route('pagoIndex')->with('pagoefectivo', 'pagado');
 
-        }
+        // }
+        try {
+            Cita::destroy($id);
+        } catch(\Exception $exception){}
+        
         
     }
 
