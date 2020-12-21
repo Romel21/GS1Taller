@@ -10905,6 +10905,7 @@ a.text-dark:focus {
 
 .img-header {
   width: 100%;
+  max-height: 40vh;
 }
 
 footer {

@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+<a href="/profile" class="btn btn-secondary m-1">Volver</a>
     <table class="table">
         <thead>
             <tr>
