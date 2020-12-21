@@ -48,6 +48,9 @@ class CitaController extends Controller
     }
 
     public function destroy($cita) {
-        $cita->delete();
+        try {
+            Cita::destroy($cita);
+        } catch(\Exception $exception){}
+        
     }
 }
